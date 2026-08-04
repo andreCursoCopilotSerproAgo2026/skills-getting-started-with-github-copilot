@@ -74,6 +74,118 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants {
+  margin-top: 12px;
+}
+
+.participants-list {
+  list-style: none;
+  margin-top: 6px;
+  padding: 0;
+  max-height: 120px;
+  overflow: auto;
+  background: linear-gradient(180deg, #ffffff, #fbfbff);
+  border-radius: 4px;
+  padding: 8px 6px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px dashed #eee;
+  font-size: 14px;
+  color: #444;
+}
+
+.participants-list li:last-child {
+  border-bottom: none;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198,40,40,0.04);
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remove-text {
+  color: #c62828;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-box {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  max-width: 420px;
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn.danger {
+  background: #c62828;
+  color: white;
+  border-color: transparent;
+}
+
+.btn:hover {
+  filter: brightness(0.98);
+}
+
+.no-participants {
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
